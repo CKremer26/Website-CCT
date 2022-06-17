@@ -1,0 +1,203 @@
+<head>
+  <style>
+    p.White {
+      color: white;
+      font-size: 20px;
+    }
+
+    h1.White {
+      color: white;
+      font-size: 25px;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+  <title>Mario</title>
+
+  <!-- Meta tags for SEO and social sharing -->
+  <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+  <meta
+    name="description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Hello World!" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+  <meta
+    property="og:description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta
+    property="og:image"
+    content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+  />
+  <meta name="twitter:card" content="summary" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: Black">
+  <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
+    <button
+      type="button"
+      class="navbar-toggle"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Home</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"></li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            C
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/C">What it is</a>
+            <a class="dropdown-item" href="/mario">Mario</a>
+            <a class="dropdown-item" href="/caesar">Caesar</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown2"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HTML
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="/hypertext">What it is</a>
+            <a class="dropdown-item" href="/css"
+              >Cascading Style Sheets (CSS)</a
+            >
+            <a class="dropdown-item" href="/Bootstrap">Bootstrap</a>
+            <a class="dropdown-item" href="/publishing"
+              >Publishing and Heroku</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown3"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Gits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="/gitworks"
+              >How it works + Commands</a
+            >
+            <a class="dropdown-item" href="/github">Github</a>
+            <a class="dropdown-item" href="/merges"
+              >Merges and merge conflicts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown4"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Flutter
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="/flutter">What it is</a>
+              <a class="dropdown-item" href="/micard">MiCard</a>
+              <a class="dropdown-item" href="/gitpages">Github Pages</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Text</h1>
+  <h1 class="white" style="text-align: center"><u>Mario</u></h1>
+  <br />
+  <div class="container">
+    <div class="sameline">
+      <div class="sameline pull-right" style="vertical-align: top">
+        <img
+          src="https://cdn.glitch.global/91b8a39c-b2da-43aa-aac1-c6ba51a3f9ce/pyramid.png?v=1652461142431"
+          width="400"
+          height="350"
+          alt="Mario pyramid"
+          style="margin-left: 40px"
+        />
+      </div>
+      <p class="white">
+        In the game Mario, toward the end of level 1-1, Mario ascends a
+        right-aligned pyramid to reach the flagpole. The goal of the program
+        "Mario", is to have a user input an integer (and ONLY an integer)
+        between 1-8 and have the terminal print out a right-aligned pyramid with
+        the corresponding amount of hashes.
+      </p>
+      <br />
+      <p class="white">
+        First, we need to make it so that the program prompts the user for an
+        integer. This can be done by using the get_int function and then store
+        that value in a variable called "height". However, the program should
+        only take an integer between 1 and 8. If the user fails to comply, they
+        should be re-prompted, this can be done with a <b>Do While Loop</b>.
+        Then, using the integer that we got from the user, the program needs to
+        print out the corresponding amount of hashes for the first line, this
+        can be done using a <b>For Loop</b>. However, now we needs to print the
+        correct amount of lines of hashes, this is where a <b>Nested</b> for
+        loop comes in (basically putting a for loop within a for loop). However,
+        we also need this pyramid to be <u>right</u>-aligned. This means that we
+        also need the program to print the correct amount of spaces before
+        printing the hashtags.
+      </p>
+      <br />
+      <p class="white">
+        Above is an example of really detailed <b>pseudocode</b>. Pseudocode is
+        usefull when trying to program things, as it gives us a plan, goal, and
+        understanding of what we want to code. Typically, pseudocode does not
+        have to be this detailed. Below is the resulting code that I wrote for
+        this program with the corresponding output. Note the comments (prefix of
+        //). These are there so not only myself, but others can easily
+        understand what line of code does what. For this program, I used the
+        <a href="https://ide.cs50.io/">CS50 IDE</a>.
+      </p>
+      <br />
+      <script src="https://gist.github.com/CKremer26/709013aaeccf13628db8159172f2a252.js"></script>
+    </div>
+  </div>
+</body>

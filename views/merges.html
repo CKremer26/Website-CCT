@@ -1,0 +1,234 @@
+<head>
+  <style>
+    p.paragraph {
+      font-size: 20px;
+    }
+
+    h1.header {
+      font-size: 25px;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+  <title>Merges</title>
+
+  <!-- Meta tags for SEO and social sharing -->
+  <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+  <meta
+    name="description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Hello World!" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+  <meta
+    property="og:description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta
+    property="og:image"
+    content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+  />
+  <meta name="twitter:card" content="summary" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: PaleGreen">
+  <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
+    <button
+      type="button"
+      class="navbar-toggle"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Home</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"></li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            C
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/C">What it is</a>
+            <a class="dropdown-item" href="/mario">Mario</a>
+            <a class="dropdown-item" href="/caesar">Caesar</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown2"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HTML
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="/hypertext">What it is</a>
+            <a class="dropdown-item" href="/css"
+              >Cascading Style Sheets (CSS)</a
+            >
+            <a class="dropdown-item" href="/Bootstrap">Bootstrap</a>
+            <a class="dropdown-item" href="/publishing"
+              >Publishing and Heroku</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown3"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Gits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="/gitworks"
+              >How it works + Commands</a
+            >
+            <a class="dropdown-item" href="/github">Github</a>
+            <a class="dropdown-item" href="/merges"
+              >Merges and merge conflicts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown4"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Flutter
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="/flutter">What it is</a>
+            <a class="dropdown-item" href="/micard">MiCard</a>
+            <a class="dropdown-item" href="/gitpages">Github Pages</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <h1>Text</h1>
+  </div>
+  <h1 style="text-align: center"><u> Merges and Merge Conflicts </u></h1>
+  <br />
+  <div class="container">
+    <div class="sameline">
+      <div class="sameline pull-right" style="vertical-align: top">
+        <img
+          src="https://cdn.glitch.global/91b8a39c-b2da-43aa-aac1-c6ba51a3f9ce/maxresdefault.jpg?v=1654794939419"
+          width="600"
+          height="400"
+          alt="Git Merge Conflict"
+          style="margin-left: 40px"
+        />
+      </div>
+      <p class="paragraph">
+        A git merge conflict is where there is a failure to merge a branch to
+        the master branch. There are many reasons why this can happen and is
+        probably one of the most common errors to encounter with Git, espicially
+        when collaborating with others. A merge error most commonly occurs when
+        one person creates a branch, changes something, and commits, while
+        another person is on the master branch, changes the same thing, and
+        commits. Because the code is conflicting each other, the git merge
+        command will merge what it can, and it is up to the developer to resolve
+        the conflict. Another type of error is version mismatch, where someone
+        is trying to merge a branch of a previous version of master with a newer
+        version of master.
+      </p>
+      <h1 class="header">
+        <u>How to Resolve Merge Conflicts</u>
+      </h1>
+      <p class="paragraph">
+        It is important to note that merge conflicts have to be resolved
+        manually, usually by the leader if a group of people are collaborating
+        together. The first step in solving a merge conflict is to find what
+        file is conflicting and what is conflicting in the file in question.
+        Using the $ git status command, we can see an output of unmerged paths,
+        these are the paths that need to be resolved. The best way to resolve a
+        merge conflict is to edit the conflicted file directly, and make
+        appropiate changes that resolve the conflict. Add the file to the
+        staging are and commit it. Git will see that the conflict is resolved
+        and creates a new commit to finialize the merge. A good tutorial for
+        recognizing and solving
+        <a
+          href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts"
+          >merge conflicts</a
+        >
+      </p>
+      <h1 class="header">
+        <u>Other Useful Commands to Solve Merge Conflicts</u>
+      </h1>
+      <ul style="font-size: 20px">
+        <li>
+          $git log --merge - This command will show you a log with a list of
+          commits that conflict between merging branches.
+        </li>
+        <li>
+          $git diff - This command will show you differences between states of
+          repositories/files which is useful when avoiding and predicting merge
+          conflicts.
+        </li>
+        <li>
+          $git reset --mixed - This command will undo changes to the working
+          directory and staging area, useful if you make a mistake.
+        </li>
+        <li>
+          $git merge --abort - This command stop the merge and return the branch
+          to a state before the merge took place.
+        </li>
+        <li>
+          $git reset - This command can be used during a merge conflict and will
+          return the conflicted files to a state where they were not
+          conflicting.
+        </li>
+      </ul>
+      <p class="paragraph">
+        An important thing to note is:
+        <b>always protect the master branch.</b> This is where all your code is
+        and you don't want to lose it. Changes should only ever be merged via
+        pull requests, as good practice, that way every merge will need to be
+        reviewed by the leader as to prevent loss of work and merge conflicts.
+      </p>
+    </div>
+  </div>
+</body>

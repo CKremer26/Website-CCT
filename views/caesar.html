@@ -1,0 +1,272 @@
+<head>
+  <style>
+    p.White {
+      color: white;
+      font-size: 20px;
+    }
+
+    h1.White {
+      color: white;
+      font-size: 25px;
+    }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+  <title>Caesar</title>
+
+  <!-- Meta tags for SEO and social sharing -->
+  <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+  <meta
+    name="description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Hello World!" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+  <meta
+    property="og:description"
+    content="A simple website, built with Glitch. Remix it to get your own."
+  />
+  <meta
+    property="og:image"
+    content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+  />
+  <meta name="twitter:card" content="summary" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: Black">
+  <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
+    <button
+      type="button"
+      class="navbar-toggle"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+    >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Home</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"></li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            C
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/C">What it is</a>
+            <a class="dropdown-item" href="/mario">Mario</a>
+            <a class="dropdown-item" href="/caesar">Caesar</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown2"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            HTML
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="/hypertext">What it is</a>
+            <a class="dropdown-item" href="/css"
+              >Cascading Style Sheets (CSS)</a
+            >
+            <a class="dropdown-item" href="/Bootstrap">Bootstrap</a>
+            <a class="dropdown-item" href="/publishing"
+              >Publishing and Heroku</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown3"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Gits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="/gitworks"
+              >How it works + Commands</a
+            >
+            <a class="dropdown-item" href="/github">Github</a>
+            <a class="dropdown-item" href="/merges"
+              >Merges and merge conflicts</a
+            >
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown4"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Flutter
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="/flutter">What it is</a>
+            <a class="dropdown-item" href="/micard">MiCard</a>
+            <a class="dropdown-item" href="/gitpages">Github Pages</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Text</h1>
+  <h1 class="white" style="text-align: center"><u>Caesar</u></h1>
+  <br />
+  <div class="container">
+    <div class="sameline">
+      <div class="sameline pull-right" style="vertical-align: top">
+        <img
+          src="https://cdn.glitch.global/91b8a39c-b2da-43aa-aac1-c6ba51a3f9ce/Caesar%20Cipher%20Wheel.png?v=1652463480768"
+          width="400"
+          height="400"
+          alt="image with Caesar cipher"
+          style="margin-left: 40px"
+        />
+      </div>
+      <p class="white">
+        A Caesar cipher is a cipher that shifts letters by a certain amount of
+        times down the alphabet. The goal of this project is to make a program
+        that can encrypt text with any given key, but keep capitals and
+        punctuation. For this, we will need a key and text from the user, which
+        will then be used in a function that will shift the
+        <a href="https://www.rapidtables.com/code/text/ascii-table.html"
+          >ASCII</a
+        >
+        values depending on the key inputted by the user. So, for this to work,
+        we will need the user to input in the terminal their key, and then store
+        it as a string. Then, we will need the program to reject input that is
+        not an integer or if there are too many arguments (to prevent a
+        segmentation fault). This can be done by using an if else statement and
+        using an exit code to kill the program and output an error message if
+        the user failed to comply. Now, we need to prompt the user for text and
+        store it as a string. <br /> <br /> Then we're going to have to create a function that
+        will be called over and over again that will convert the char value in a
+        string to an int ASCII value and shift it by the key amount, then
+        convert it back to a char. Now that we have a function to do this, we
+        need to use a for loop to call it for each and every char in our string
+        length array. We can use the function atoi() to convert the key argument
+        to an integer. After the key and char are passed into the function, take
+        the return value and store it into an integer that will then be printed
+        to the terminal. Now, it is important that we define our constant number
+        at the top for the ASCII base values, 65 being for uppercase and 97
+        being for lowercase. It is also important to note that our encrpyt
+        function ignores punctuation, this can be done by having if/else
+        statements in our encrypt function that checks to see if it is a letter
+        (Using the functions isupper and islower to check for uppercase and
+        lowercase letters).
+      </p>
+      <h1 class="white">
+        <u>The Libraries</u>
+      </h1>
+      <p class="white">
+        Libraries are pre-written code that we can use in our programs that can
+        be useful. This project uses many functions that require certain
+        libraries to use (such as the atoi() function). These libraries and the
+        associated functions used in this project are as follows:
+      </p>
+      <ul style="color: white; font-size: 20px">
+        <li>
+          stdio.h - This is the Standard Input and Output library. Most C
+          programs use this library.
+        </li>
+        <li>
+          cs50.h - This is the CS50 library. It contains useful datatypes such
+          as the <b>string</b> datatype.
+        </li>
+        <li>
+          ctype.h - This library contains the function isalpha(), islower(), and
+          isupper().
+        </li>
+        <li>
+          stdlib.h - This library is the C Standard Library library. It contains
+          the function atoi().
+        </li>
+        <li>
+          string.h - This library is the string library that contains the
+          function strlen().
+        </li>
+        <li>
+          Although not used in this project, a header file could be made that
+          contains the encrypt() function. This would negate the need to define
+          the function in the project, but you will need to include it at the
+          top.
+        </li>
+      </ul>
+      <br />
+      <h1 class="white">
+        <u>The Code:</u>
+      </h1>
+      <script src="https://gist.github.com/CKremer26/3c601b126009d5a50c504387ce3110a1.js"></script>
+      <h1 class="white">Pseudo Code:</h1>
+      <ul style="color: white; font-size: 20px">
+        <li>
+          Make a function that will take a character and a key that will shift
+          the characters ASCII value by the amount of the key without affecting
+          capitals or non alphabetic characters. Make sure to wrap around by
+          using modulo (%) 26.
+        </li>
+        <li>
+          Get a key value from the user by using an argument in the command
+          terminal and store it as a string. If they do not cooperate, display
+          and error with instructions for how to use the progam properly. Stop
+          the program.
+        </li>
+        <li>
+          Prompt the user for a string value and store it in a string variable
+          called plaintext.
+        </li>
+        <li>
+          Make a loop that will iterate through every character in the string
+          and pass it through the encrypt function along with the key value
+          which should be converted to an integer.
+        </li>
+        <li>Print each character that the function returns.</li>
+      </ul>
+      <p style="color: white; font-size:15px">
+        The project was made using <a href="https://code.cs50.io/">VS Code</a>.
+      </p>
+      <p style="color: white; font-size:15px">
+        I made a podcast on this project. You can find the video <a href="/C">here</a>.
+      </p>
+    </div>
+  </div>
+</body>
